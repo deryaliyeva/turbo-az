@@ -92,88 +92,90 @@
     <main>
         <section class="pt-8 dark:bg-[#ebedf3]">
             <form novalidate="" action="" class="container flex flex-col mx-auto space-y-12">
-                <fieldset class="grid grid-cols-4 gap-6 p-6 rounded-md shadow-sm">
-                    <div class="grid grid-cols-4 mb-7 gap-2 col-span-full lg:col-span-1">
-                        <div class="col-span-full rounded-lg p-2 h-12 bg-white sm:col-span-5">
+                <fieldset class="grid grid-cols-4 gap-1 p-6 rounded-md shadow-sm">
+                    <div id="prices" class="grid grid-cols-6 mb-7 py-2 gap-2 col-span-full lg:col-span-1 lg:row-span-1">
+                        <div class="col-span-4 rounded-lg p-2 h-12 w-64 bg-white sm:col-span-12">
                             <label for="firstname" class="text-base flex items-center cursor-pointer dark:text-[#8d94ad] font-light">
-                                <input type="text" placeholder="Marka" />
-                                <select id="marka"></select>
+                                <input type="text" class="w-28" placeholder="Marka" />
+                                <select class="w-34" id="marka"></select>
                             </label>
                         </div>
-                        <div class="col-span-full bg-white rounded-lg h-12 w-36 sm:col-span-2">
+                        <div  class="col-span-4 bg-white rounded-lg h-11 w-32 sm:col-span-2">
                             <label for="lastname" class="text-base flex items-center py-2 px-1 dark:text-[#8d94ad] font-light">
-                                <input type="text" class="w-16" placeholder="Qiymət" />
-                                <select id="qiymet"></select>
+                                <input id="mininp" type="text" class="w-28" placeholder="Qiymət min." />
                             </label>
                         </div>
-                        <div class="col-span-full bg-white rounded-lg h-12 w-32 sm:col-span-2">
+                        <div class="col-span-4 bg-white ml-12 rounded-lg h-11 w-[120px] sm:col-span-2">
                             <label for="lastname" class="text-base flex items-center p-2 dark:text-[#8d94ad] font-light">
-                                <input type="text" class="w-18" placeholder="maks" />
-                                <select id="maksi"></select>
+                                <input id="maksinp" type="text" class="w-24" placeholder="maks." />
                             </label>
                         </div>
                     </div>
                 <div class="grid grid-cols-6 mb-7 py-2 gap-2 col-span-full lg:col-span-1 lg:row-span-1">
-                    <div class="col-span-full rounded-lg p-2 h-12 w-80 bg-white sm:col-span-12">
+                    <div class="col-span-4 rounded-lg p-2 h-12 w-64 bg-white sm:col-span-12">
                         <label for="firstname" class="text-base flex items-center cursor-pointer dark:text-[#8d94ad] font-light">
-                            <input type="text" placeholder="Model" />
-                            <select id="model"></select>
+                            <input type="text" class="w-28" placeholder="Model" />
+                            <select class="w-34" id="model"></select>
                         </label>
                     </div>
-                    <div class="col-span-full bg-white flex items-center rounded-lg sm:col-span-2 pl-2 h-10">
+                    <div class="col-span-4 bg-white flex items-center rounded-lg sm:col-span-2 pl-2 h-10">
                         <label for="city" class="text-base flex items-center justify-end dark:text-[#8d94ad] cursor-pointer font-light">
                             <select id="moneys"></select>
                         </label>
                     </div>
-                    <div class="col-span-full bg-white flex hover:bg-neutral-300 cursor-pointer items-center rounded-lg sm:col-span-2 pl-2 h-10">
+                    <div class="col-span-4 bg-white flex hover:bg-neutral-300 cursor-pointer items-center rounded-lg sm:col-span-2 pl-2 h-10">
                         <label for="state" class="text-base font-light">Kredit</label>
                     </div>
-                    <div class="col-span-full bg-white flex items-center rounded-lg hover:bg-neutral-300 cursor-pointer sm:col-span-2 pl-2 h-10">
+                    <div class="col-span-4 bg-white flex items-center rounded-lg hover:bg-neutral-300 cursor-pointer sm:col-span-2 pl-2 h-10">
                         <label for="zip" class="text-base font-light">Barter</label>
                     </div>
                 </div>
-                <div class="grid grid-cols-6 gap-2 mb-7 col-span-full cursor-pointer lg:col-span-1">
-                    <div class="col-span-full bg-[#ca1016] sm:col-span-2 h-12 flex items-center justify-center rounded-lg rounded-r-none p-1">
+                <div class="grid grid-cols-7 gap-1 mb-7 col-span-full cursor-pointer lg:col-span-1">
+                    <div class="col-span-4 bg-[#ca1016] sm:col-span-2 h-12 flex items-center justify-center rounded-lg rounded-r-none p-1">
                         <label for="firstname" class="text-base dark:text-white font-light">Hamısı</label>
                     </div>
-                    <div class="col-span-full bg-white sm:col-span-2 h-12  flex items-center justify-center rounded-lg p-1">
+                    <div class="col-span-4 bg-white sm:col-span-2 h-12  flex items-center justify-center rounded-lg p-1">
                         <label for="lastname" class="text-base dark:text-[#8d94ad] font-light">Yeni</label>
                     </div>
-                    <div class="col-span-full bg-white sm:col-span-2 h-12 flex items-center justify-center rounded-lg p-1">
+                    <div class="col-span-4 bg-white sm:col-span-2 h-12 flex items-center justify-center rounded-lg p-1">
                         <label for="lastname" class="text-base dark:text-[#8d94ad] font-light">Sürülmüş</label>
                     </div>
-                    <div class="col-span-full w-80 bg-white sm:col-span-6 h-12 cursor-pointer flex items-center rounded-lg p-1">
+                    <div class="col-span-4 w-[260px] bg-white sm:col-span-6 h-12 cursor-pointer flex items-center rounded-lg p-1">
                         <label for="email" class="text-base dark:text-[#8d94ad] font-light">
-                            <input type="text" placeholder="Ban növü" />
+                            <input type="text" class="w-28" placeholder="Ban növü" />
                             <select id="ban"></select>
                         </label>
                     </div>
                 </div>
-                <div class="grid grid-cols-4 mb-7 gap-2 col-span-full lg:col-span-1">
-                    <div class="col-span-full rounded-lg p-2 h-12 bg-white sm:col-span-5">
+                <div class="grid grid-cols-4 mb-7 col-span-full lg:col-span-1">
+                    <div class="col-span-4 rounded-lg w-[200px] p-2 h-12 bg-white sm:col-span-5">
                         <label for="firstname" class="text-base flex items-center cursor-pointer dark:text-[#8d94ad] font-light">
-                           <input type="text" placeholder="Şəhər" />
+                           <input type="text" class="w-20" placeholder="Şəhər" />
                            <select id="seher"></select>
                         </label>
                     </div>
-                    <div class="col-span-full bg-white rounded-lg h-12 flex justify-center p-1 items-center sm:col-span-2">
+                    <div class="col-span-4 bg-white rounded-lg h-11 w-32 sm:col-span-2">
                         <label for="lastname" class="text-base flex items-center py-2 px-1 dark:text-[#8d94ad] font-light">
-                            <input type="text" class="w-16" placeholder="il" />
+                            <input type="text" class="w-14" placeholder="il, min." />
                             <select id="years"></select>
                         </label>
                     </div>
-                    <div class="col-span-full rounded-lg flex justify-center p-1 mx-1 h-12 items-center bg-white sm:col-span-2">
-                        <label for="email" class="text-base dark:text-[#8d94ad] font-light">
-                            <input type="text" class="w-18" placeholder="maks" />
+                    <div class="col-span-4 bg-white rounded-lg h-11 w-28 sm:col-span-2">
+                        <label for="lastname" class="text-base flex items-center p-2 dark:text-[#8d94ad] font-light">
+                            <input type="text" class="w-12" placeholder="maks." />
                             <select id="maksi"></select>
                         </label>
                     </div>
                 </div>
                 </fieldset>
-            <a rel="noopener noreferrer" href="#" aria-label="Back to homepage" class="flex font-semibold text-lg items-center p-2">
-                <h1 class="">Avtomobil almaq</h1>
-                <span class="flex dark:text-[#8d94ad] px-3 text-base font-light">10000 elan</span>
-            </a>
+                <div>
+                <div class="flex items-center justify-between">
+                    <a rel="noopener noreferrer" href="#" aria-label="Back to homepage" class="flex font-semibold text-lg items-center p-2">
+                        <h1 class="">Avtomobil almaq</h1>
+                        <span class="flex dark:text-[#8d94ad] px-3 text-base font-light">10000 elan</span>
+                    </a>
+                    <button onclick="go()" class="!bg-[#ca1016] !text-white !rounded-md !my-2 !p-2">Elanlari Gosterin</button>
+                </div>
         </form>
         <div class="bg-[#e3e6f0] py-4">
             <div class="container px-3 mx-auto text-xl font-semibold">
