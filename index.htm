@@ -96,32 +96,33 @@
                     <div class="grid grid-cols-4 mb-7 gap-2 col-span-full lg:col-span-1">
                         <div class="col-span-full rounded-lg p-2 h-12 bg-white sm:col-span-5">
                             <label for="firstname" class="text-base flex items-center cursor-pointer dark:text-[#8d94ad] font-light">
-                                Marka
-                                <i class="fa-solid px-3 fa-chevron-down"></i>
+                                <input type="text" placeholder="Marka" />
+                                <select id="marka"></select>
                             </label>
                         </div>
-                        <div class="col-span-full bg-white rounded-lg h-12 flex justify-center p-1 items-center sm:col-span-2">
-                            <label for="lastname" class="text-base dark:text-[#8d94ad] font-light">
-                                Qiymət, min.
+                        <div class="col-span-full bg-white rounded-lg h-12 w-36 sm:col-span-2">
+                            <label for="lastname" class="text-base flex items-center py-2 px-1 dark:text-[#8d94ad] font-light">
+                                <input type="text" class="w-16" placeholder="Qiymət" />
+                                <select id="qiymet"></select>
                             </label>
                         </div>
-                        <div class="col-span-full rounded-lg flex justify-center p-1 mx-1 h-12 items-center bg-white sm:col-span-2">
-                            <label for="email" class="text-base dark:text-[#8d94ad] font-light">
-                                maks.
+                        <div class="col-span-full bg-white rounded-lg h-12 w-32 sm:col-span-2">
+                            <label for="lastname" class="text-base flex items-center p-2 dark:text-[#8d94ad] font-light">
+                                <input type="text" class="w-18" placeholder="maks" />
+                                <select id="maksi"></select>
                             </label>
                         </div>
                     </div>
-                <div class="grid grid-cols-6 mb-7 gap-2 col-span-full lg:col-span-1">
-                    <div class="col-span-full p-2 rounded-lg dark:bg-[#e3e3e3] cursor-pointer">
-                        <label for="address" class="text-base dark:text-[#8d94ad] font-light">
-                            Model
-                            <i class="fa-solid px-3 fa-chevron-down"></i>
+                <div class="grid grid-cols-6 mb-7 py-2 gap-2 col-span-full lg:col-span-1 lg:row-span-1">
+                    <div class="col-span-full rounded-lg p-2 h-12 w-80 bg-white sm:col-span-12">
+                        <label for="firstname" class="text-base flex items-center cursor-pointer dark:text-[#8d94ad] font-light">
+                            <input type="text" placeholder="Model" />
+                            <select id="model"></select>
                         </label>
                     </div>
                     <div class="col-span-full bg-white flex items-center rounded-lg sm:col-span-2 pl-2 h-10">
                         <label for="city" class="text-base flex items-center justify-end dark:text-[#8d94ad] cursor-pointer font-light">
-                            AZN
-                            <i class="fa-solid px-2 fa-chevron-down"></i>
+                            <select id="moneys"></select>
                         </label>
                     </div>
                     <div class="col-span-full bg-white flex hover:bg-neutral-300 cursor-pointer items-center rounded-lg sm:col-span-2 pl-2 h-10">
@@ -141,30 +142,30 @@
                     <div class="col-span-full bg-white sm:col-span-2 h-12 flex items-center justify-center rounded-lg p-1">
                         <label for="lastname" class="text-base dark:text-[#8d94ad] font-light">Sürülmüş</label>
                     </div>
-                    <div class="col-span-full bg-white sm:col-span-6 h-12 cursor-pointer flex items-center rounded-lg p-1">
+                    <div class="col-span-full w-80 bg-white sm:col-span-6 h-12 cursor-pointer flex items-center rounded-lg p-1">
                         <label for="email" class="text-base dark:text-[#8d94ad] font-light">
-                            Ban növü
-                            <i class="fa-solid px-2 fa-chevron-down"></i>
+                            <input type="text" placeholder="Ban növü" />
+                            <select id="ban"></select>
                         </label>
                     </div>
                 </div>
                 <div class="grid grid-cols-4 mb-7 gap-2 col-span-full lg:col-span-1">
                     <div class="col-span-full rounded-lg p-2 h-12 bg-white sm:col-span-5">
                         <label for="firstname" class="text-base flex items-center cursor-pointer dark:text-[#8d94ad] font-light">
-                            Şəhər
-                            <i class="fa-solid px-3 fa-chevron-down"></i>
+                           <input type="text" placeholder="Şəhər" />
+                           <select id="seher"></select>
                         </label>
                     </div>
                     <div class="col-span-full bg-white rounded-lg h-12 flex justify-center p-1 items-center sm:col-span-2">
-                        <label for="lastname" class="text-base dark:text-[#8d94ad] font-light">
-                            İl, min.
-                            <i class="fa-solid px-3 fa-chevron-down"></i>
+                        <label for="lastname" class="text-base flex items-center py-2 px-1 dark:text-[#8d94ad] font-light">
+                            <input type="text" class="w-16" placeholder="il" />
+                            <select id="years"></select>
                         </label>
                     </div>
                     <div class="col-span-full rounded-lg flex justify-center p-1 mx-1 h-12 items-center bg-white sm:col-span-2">
                         <label for="email" class="text-base dark:text-[#8d94ad] font-light">
-                            maks.
-                            <i class="fa-solid px-3 fa-chevron-down"></i>
+                            <input type="text" class="w-18" placeholder="maks" />
+                            <select id="maksi"></select>
                         </label>
                     </div>
                 </div>
@@ -183,26 +184,10 @@
         <section class="py-6 sm:py-12 bg-[#f1f3f7] dark:text-gray-800">
             <div class="container p-6 mx-auto space-y-8">
                 <div id="content" class="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
-                    <article class="flex flex-col rounded-md bg-white">
-                        <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-                            <img id="imgs" alt="" class="object-cover rounded-md w-full h-52 dark:bg-gray-500"
-                                src="img/img0.jpg" />
-                        </a>
-                        <div class="flex flex-col flex-1 p-6">
-                            <a rel="noopener noreferrer" href="#"
-                                aria-label="Te nulla oportere reprimique his dolorum"></a>
-                            <a rel="noopener noreferrer" href="#"
-                                class="text-lg font-bold uppercase">44 500 AZN</a>
-                            <h3>Tayota</h3>
-                            <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs dark:text-gray-600">
-                                <span>June 1, 2020</span>
-                                <span>2.1K views</span>
-                            </div>
-                        </div>
-                    </article>
+    
                 </div>
-                <div class="text-center dark:text-[#8d94ad] hover:text-[#b51515]">
-                    <span onclick="show()">Daha fazla göster</span>
+                <div id="duyme" class="text-center dark:text-[#8d94ad] hover:text-[#b51515]">
+                    <span onclick="artir()">Daha fazla göster</span>
                     <i class="fa-solid fa-chevron-right"></i>
                 </div>
             </div>
@@ -247,34 +232,7 @@
         </div>
     </footer>
 
-    <script>
-        const cars = ["Toyota", "Honda", "Ford", "Chevrolet", "Mercedes-Benz", "BMW", "Audi", "Volkswagen", "Porsche", "Lamborghini", "Ferrari", "Maserati", "Rolls-Royce", "Bentley", "Jaguar", "Land Rover", "Nissan", "Hyundai", "Kia", "Mazda", "Subaru", "Volvo", "Tesla", "Bugatti", "McLaren", "Chrysler", "Dodge", "Jeep", "Peugeot", "Renault"];
-        const content = document.getElementById('content');
-        const imgs = document.getElementById('imgs');
-
-        function show(){
-            for (let i = 11; i < cars.length; i++) {
-            content.innerHTML += 
-                    `<article class="flex rounded-md flex-col bg-white">
-                        <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-                            <img alt="" class="object-cover rounded-md w-full h-52 dark:bg-gray-500"
-                                src="img/img${[i]}.jpg">
-                        </a>
-                        <div class="flex flex-col flex-1 p-6">
-                            <a rel="noopener noreferrer" href="#"
-                                aria-label="Te nulla oportere reprimique his dolorum"></a>
-                            <a rel="noopener noreferrer" href="#"
-                                class="text-lg font-bold uppercase">44 500 AZN</a>
-                            <h3>${cars[i]}</h3>
-                            <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs dark:text-gray-600">
-                                <span>June 1, 2020</span>
-                                <span>2.1K views</span>
-                            </div>
-                        </div>
-                    </article> `;
-        } 
-        }
-        show();
-    </script>
+    <script src="js/data.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
