@@ -1,4 +1,4 @@
-const data = [
+let data = [
     {
 
         brand: "Abarth",
@@ -827,3 +827,5 @@ const data = [
         dates: " Bu gün  14:30",
     },
 ]
+
+const zapaz = [...data];

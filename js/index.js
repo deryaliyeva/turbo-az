@@ -8,6 +8,14 @@ const currencyArr = Array.from(new Set(data.map(item => item.currency)));
 const yearArr = Array.from(new Set(data.map(item => item.year)));
 const maksArr = Array.from(new Set(data.map(item => item.year)));
 
+const marka = document.getElementById('marka');
+const model = document.getElementById('model');
+const seher =document.getElementById('seher');
+const ban =document.getElementById('ban');
+const moneys = document.getElementById('moneys');
+const years = document.getElementById('years');
+const maksi = document.getElementById('maksi');
+
 let dilim = 8;
 
         function show(){
@@ -73,33 +81,14 @@ let dilim = 8;
       }
       artir();
 
-      // const mininp = document.getElementById('mininp');
-      // const maksinp = document.getElementById('maksinp');
-      
-      // function go(){
-      //   data.filter((item, i) => {
-      //     if(+mininp.value >= 2005 && +maksinp.value <= 2019){
-      //       content.innerHTML += `<article class="flex flex-col rounded-md bg-white">
-      //                   <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-      //                       <img id="imgs" alt="" class="object-cover max-h-[150px] rounded-md h-52 w-full dark:bg-gray-500"
-      //                           src="${item.images}"/>
-      //                   </a>
-      //                   <div class="flex flex-col flex-1 p-6">
-      //                       <a class="font-bold" rel="noopener noreferrer" href="#"
-      //                           aria-label="Te nulla oportere reprimique his dolorum">${item.brand} ${item.model}</a>
-      //                       <a rel="noopener noreferrer" href="#"
-      //                           class="text-lg uppercase"></a>
-      //                       <h3>${item.price} ${item.currency}</h3>
-      //                       <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs dark:text-gray-600">
-      //                           <span>${item.year} ${item.city}</span>
-      //                           <span>2.1K views</span>
-      //                       </div>
-      //                   </div>
-      //               </article>`;
-      //     }
-
-      //   })
-      // }
+      function go(axtaris, select){
+        // e.preventDefault();
+        const yeniArr = zapaz.filter(item => item[axtaris] == select.value);
+        data = yeniArr;
+        show();
+        
+      }
+  
 
 
 

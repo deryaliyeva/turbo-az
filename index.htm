@@ -98,7 +98,7 @@
                         <div class="col-span-4 rounded-lg p-2 h-12 w-64 bg-white sm:col-span-12">
                             <label for="firstname" class="text-base flex items-center cursor-pointer dark:text-[#8d94ad] font-light">
                                 <input type="text" class="w-28" placeholder="Marka" />
-                                <select class="w-34" id="marka"></select>
+                                <select onchange="go('brand', this)" class="w-34" id="marka"></select>
                             </label>
                         </div>
                         <div  class="col-span-4 bg-white rounded-lg h-11 w-32 sm:col-span-2">
@@ -116,12 +116,12 @@
                     <div class="col-span-4 rounded-lg p-2 h-12 w-64 bg-white sm:col-span-12">
                         <label for="firstname" class="text-base flex items-center cursor-pointer dark:text-[#8d94ad] font-light">
                             <input type="text" class="w-28" placeholder="Model" />
-                            <select class="w-34" id="model"></select>
+                            <select onchange="go('model', this)" class="w-34" id="model"></select>
                         </label>
                     </div>
                     <div class="col-span-4 bg-white flex items-center rounded-lg sm:col-span-2 pl-2 h-10">
                         <label for="city" class="text-base flex items-center justify-end dark:text-[#8d94ad] cursor-pointer font-light">
-                            <select id="moneys"></select>
+                            <select onchange="go('price', this)" id="moneys"></select>
                         </label>
                     </div>
                     <div class="col-span-4 bg-white flex hover:bg-neutral-300 cursor-pointer items-center rounded-lg sm:col-span-2 pl-2 h-10">
@@ -144,7 +144,7 @@
                     <div class="col-span-4 w-[260px] bg-white sm:col-span-6 h-12 cursor-pointer flex items-center rounded-lg p-1">
                         <label for="email" class="text-base dark:text-[#8d94ad] font-light">
                             <input type="text" class="w-28" placeholder="Ban növü" />
-                            <select id="ban"></select>
+                            <select onchange="go('bantype', this)" id="ban"></select>
                         </label>
                     </div>
                 </div>
@@ -152,19 +152,19 @@
                     <div class="col-span-4 rounded-lg w-[200px] p-2 h-12 bg-white sm:col-span-5">
                         <label for="firstname" class="text-base flex items-center cursor-pointer dark:text-[#8d94ad] font-light">
                            <input type="text" class="w-20" placeholder="Şəhər" />
-                           <select id="seher"></select>
+                           <select onchange="go('city', this)" id="seher"></select>
                         </label>
                     </div>
                     <div class="col-span-4 bg-white rounded-lg h-11 w-32 sm:col-span-2">
                         <label for="lastname" class="text-base flex items-center py-2 px-1 dark:text-[#8d94ad] font-light">
                             <input type="text" class="w-14" placeholder="il, min." />
-                            <select id="years"></select>
+                            <select onchange="go('year', this)" id="years"></select>
                         </label>
                     </div>
                     <div class="col-span-4 bg-white rounded-lg h-11 w-28 sm:col-span-2">
                         <label for="lastname" class="text-base flex items-center p-2 dark:text-[#8d94ad] font-light">
                             <input type="text" class="w-12" placeholder="maks." />
-                            <select id="maksi"></select>
+                            <select onchange="go('year', this)" id="maksi"></select>
                         </label>
                     </div>
                 </div>
@@ -175,7 +175,7 @@
                         <h1 class="">Avtomobil almaq</h1>
                         <span class="flex dark:text-[#8d94ad] px-3 text-base font-light">10000 elan</span>
                     </a>
-                    <button onclick="go()" class="!bg-[#ca1016] !text-white !rounded-md !my-2 !p-2">Elanlari Gosterin</button>
+                    <button onclick="go(event)" class="!bg-[#ca1016] !text-white !rounded-md !my-2 !p-2">Elanlari Gosterin</button>
                 </div>
         </form>
         <div class="bg-[#e3e6f0] mt-3 py-4">
