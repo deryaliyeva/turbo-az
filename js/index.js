@@ -15,6 +15,10 @@ const ban =document.getElementById('ban');
 const moneys = document.getElementById('moneys');
 const years = document.getElementById('years');
 const maksi = document.getElementById('maksi');
+const heart = document.getElementById('heart');
+const heart2 = document.getElementById('heart2');
+
+
 
 let dilim = 8;
 
@@ -23,23 +27,31 @@ let dilim = 8;
         data
         .slice(0, dilim)
         .map((item, i) => {
-          content.innerHTML += `<article class="flex flex-col rounded-md bg-white">
-                        <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-                            <img id="imgs" alt="" class="object-cover max-h-[150px] rounded-md h-52 w-full dark:bg-gray-500"
-                                src="${item.images}"/>
-                        </a>
-                        <div class="flex flex-col flex-1 p-6">
-                            <a class="font-bold" rel="noopener noreferrer" href="#"
-                                aria-label="Te nulla oportere reprimique his dolorum">${item.brand} ${item.model}</a>
-                            <a rel="noopener noreferrer" href="#"
-                                class="text-lg uppercase"></a>
-                            <h3>${item.price} ${item.currency}</h3>
-                            <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs dark:text-gray-600">
-                                <span>${item.year} ${item.city}</span>
-                                <span>2.1K views</span>
-                            </div>
-                        </div>
-                    </article>`;
+          content.innerHTML += `
+          <article class="flex flex-col rounded-md bg-white relative group">
+              <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum" class="relative">
+                  <img id="imgs" alt="" class="object-cover max-h-[150px] rounded-md h-52 w-full dark:bg-gray-500"
+                      src="${item.images}" />
+                  <span onclick="showColor(this, event)" id="heart" class="absolute top-1 right-2 text-3xl opacity-100 text-white">
+                      ♥
+                  </span>
+                   <span onclick="showColor(this, event)" id="heart2" class="absolute bottom-1 right-2 bg-white rounded-md px-1 text-l opacity-100">
+                      👑 💎
+                  </span>
+              </a>
+              <div class="flex flex-col flex-1 p-6">
+                  <a class="font-bold" rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                      ${item.brand} ${item.model}
+                  </a>
+                  <h3>${item.price} ${item.currency}</h3>
+                  <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs dark:text-gray-600">
+                      <span>${item.year} ${item.city}</span>
+                      <span>2.1K views</span>
+                  </div>
+              </div>
+          </article>
+      `;
+
         })
         }
         show();
@@ -88,7 +100,11 @@ let dilim = 8;
         show();
         
       }
-  
+
+      function showColor(x, e) {
+        e.preventDefault();
+        x.style.color = 'red';
+    }
 
 
 
