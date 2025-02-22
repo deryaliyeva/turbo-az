@@ -92,46 +92,46 @@
     </header>
     <main>
         <section class="pt-8 dark:bg-[#ebedf3]">
-            <form class="container flex items-cente flex-col mx-auto space-y-12">
-                <fieldset class="grid grid-cols-4 gap-1 p-6 rounded-md shadow-sm">
-                    <div id="prices" class="grid grid-cols-1 mb-7 py-2 gap-2 col-span-full lg:col-span-1 lg:row-span-1">
-                        <div class="col-span-4 rounded-lg p-2 h-12 w-64 bg-white sm:col-span-12">
+            <form class="container flex justify-between flex-col mx-auto space-y-12">
+                <fieldset class="flex !md:items-center !md:justify-center flex-wrap md:max-w-full gap-4 p-6 rounded-md shadow-sm">
+                    <div id="prices" class="grid grid-cols-1 mb-7 py-2 gap-2 md:col-span-1 md:row-span-1">
+                        <div class="col-span-4 rounded-lg p-2 h-12 w-64 bg-white !md:col-span-12">
                             <label for="firstname" class="text-base flex items-center cursor-pointer dark:text-[#8d94ad] font-light">
                                 <input type="text" class="w-28" placeholder="Marka" />
                                 <select onchange="go('brand', this)" class="w-34" id="marka"></select>
                             </label>
                         </div>
-                        <div  class="col-span-4 bg-white rounded-lg h-11 w-32 sm:col-span-2">
+                        <div  class="col-span-4 bg-white rounded-lg h-11 w-full sm:col-span-2">
                             <label for="lastname" class="text-base flex items-center py-2 px-1 dark:text-[#8d94ad] font-light">
                                 <input id="mininp" type="text" class="w-28" placeholder="Qiymət min." />
                             </label>
                         </div>
-                        <div class="col-span-4 bg-white rounded-lg h-11 w-[120px] sm:col-span-2">
-                            <label for="lastname" class="text-base flex items-center p-2 dark:text-[#8d94ad] font-light">
-                                <input id="maksinp" type="text" class="w-24" placeholder="maks." />
+                        <div class="col-span-4 bg-white w-full rounded-lg h-11 sm:col-span-2">
+                            <label for="lastname" class="text-base sm:w-1/2 mx-auto md:col-4 flex items-center p-2 dark:text-[#8d94ad] font-light">
+                                <input id="maksinp" type="text" class="w-16" placeholder="maks." />
                             </label>
                         </div>
                     </div>
-                <div class="grid grid-cols-6 mb-7 py-2 gap-2 col-span-full lg:col-span-1 lg:row-span-1">
-                    <div class="col-span-4 rounded-lg p-2 h-12 w-64 bg-white sm:col-span-12">
+                <div class="grid grid-cols-1 mb-7 py-2 gap-2 md:col-span-1 md:row-span-1">
+                    <div class="col-span-4 rounded-lg p-2 h-12 bg-white sm:col-span-12">
                         <label for="firstname" class="text-base flex items-center cursor-pointer dark:text-[#8d94ad] font-light">
                             <input type="text" class="w-28" placeholder="Model" />
                             <select onchange="go('model', this)" class="w-34" id="model"></select>
                         </label>
                     </div>
-                    <div class="col-span-4 bg-white flex items-center rounded-lg sm:col-span-2 pl-2 h-10">
+                    <div class="col-span-4 bg-white flex w-full items-center rounded-lg sm:col-span-2 pl-2 h-10">
                         <label for="city" class="text-base flex items-center justify-end dark:text-[#8d94ad] cursor-pointer font-light">
                             <select onchange="go('price', this)" id="moneys"></select>
                         </label>
                     </div>
-                    <div class="col-span-4 bg-white flex hover:bg-neutral-300 cursor-pointer items-center rounded-lg sm:col-span-2 pl-2 h-10">
+                    <div class="col-span-4 bg-white flex hover:bg-neutral-300 w-full cursor-pointer items-center rounded-lg sm:col-span-2 pl-2 h-10">
                         <label for="state" class="text-base font-light">Kredit</label>
                     </div>
-                    <div class="col-span-4 bg-white flex items-center rounded-lg hover:bg-neutral-300 cursor-pointer sm:col-span-2 pl-2 h-10">
+                    <div class="col-span-4 bg-white flex items-center w-full  rounded-lg hover:bg-neutral-300 cursor-pointer sm:col-span-2 pl-2 h-10">
                         <label for="zip" class="text-base font-light">Barter</label>
                     </div>
                 </div>
-                <div class="grid grid-cols-7 gap-2 mb-7 col-span-full cursor-pointer lg:col-span-1">
+                <div class="grid grid-cols-1 mb-7 py-2 gap-2 md:col-span-1 md:row-span-1">
                     <div class="col-span-4 bg-[#ca1016] sm:col-span-2 h-12 flex items-center justify-center rounded-lg rounded-r-none p-1">
                         <label for="firstname" class="text-base dark:text-white font-light">Hamısı</label>
                     </div>
@@ -148,22 +148,22 @@
                         </label>
                     </div>
                 </div>
-                <div class="grid grid-cols-5 gap-2 mb-7 col-span-full lg:col-span-1">
-                    <div class="col-span-4 rounded-lg w-[200px] p-2 h-12 bg-white sm:col-span-5">
+                <div class="grid grid-cols-1 mb-7 py-2 gap-2 md:col-span-1 md:row-span-1">
+                    <div class="col-span-4 rounded-lg w-full p-2 h-12 bg-white sm:col-span-5">
                         <label for="firstname" class="text-base flex items-center cursor-pointer dark:text-[#8d94ad] font-light">
-                           <input type="text" class="w-20" placeholder="Şəhər" />
+                           <input type="text" class="w-full" placeholder="Şəhər" />
                            <select onchange="go('city', this)" id="seher"></select>
                         </label>
                     </div>
-                    <div class="col-span-4 bg-white rounded-lg h-11 w-32 sm:col-span-2">
+                    <div class="col-span-4 bg-white rounded-lg h-11 w-full sm:col-span-2">
                         <label for="lastname" class="text-base flex items-center py-2 px-1 dark:text-[#8d94ad] font-light">
-                            <input type="text" class="w-14" placeholder="il, min." />
+                            <input type="text" class="w-28" placeholder="il, min." />
                             <select onchange="go('year', this)" id="years"></select>
                         </label>
                     </div>
-                    <div class="col-span-4 bg-white rounded-lg h-11 w-28 sm:col-span-2">
+                    <div class="col-span-4 bg-white rounded-lg h-11 w-full sm:col-span-2">
                         <label for="lastname" class="text-base flex items-center p-2 dark:text-[#8d94ad] font-light">
-                            <input type="text" class="w-12" placeholder="maks." />
+                            <input type="text" class="w-28" placeholder="maks." />
                             <select onchange="go('year', this)" id="maksi"></select>
                         </label>
                     </div>
@@ -229,7 +229,7 @@
         </div>
         <div>
             <div class="bg-[#b51515]">
-            <div class="flex items-center justify-between gap-7 container mx-auto p-4 text-sm font-light dark:text-white">
+            <div class="flex items-center justify-center gap-5 container mx-auto p-4 text-sm font-light dark:text-white">
                 <span class="w-100 cursor-pointer">Saytın Administrasiyası reklam bannerlərinin və yerləşdirilmiş elanların məzmununa görə məsuliyyət daşımır.</span>
                 <span class="cursor-pointer">2006-2025 Digital Classifieds MMC. VÖEN: 1405631661</span>
                 <span class="cursor-pointer">Mobil versiyası</span>
