@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <section class="dark:bg-[#f7f7f7] dark:text-gray-800 flex items-center justify-between"> 
+        <section class="dark:bg-[#f7f7f7] dark:text-gray-800 flex !items-center justify-between"> 
             <div class="container px-5 p-2 flex justify-between mx-auto">
                 <ul class="space-x-3 md:flex">
                     <li class="dark:text-[#8d94ad] hover:text-red-700 flex items-center font-light px-1">
@@ -36,12 +36,13 @@
                     <li class="flex dark:text-[#8d94ad] hover:text-red-700 font-light">
                         <a rel="noopener noreferrer" href="#" class="flex items-center px-1 -mb-1 border-b-2 dark:border- dark:text-violet-600 dark:border-violet-600">RU</a>
                     </li>
-                    <li class="flex dark:text-[#8d94ad] hover:text-red-700 font-light px-1">
-                        <a rel="noopener noreferrer" href="#" class="flex items-center px-2 -mb-1 border-b-2 dark:border-">
-                            <i class="fa-solid fa-heart p-2"></i>
-                            Seçilmişlər
+                    <li class="flex dark:text-[#8d94ad] hover:text-red-700 font-light px-1 relative">
+                        <a id="openLink" onclick="openMenu(event, this)" rel="noopener noreferrer" href="#" class="flex items-center px-2 -mb-1 border-b-2 dark:border-">
+                          <i class="fa-solid fa-heart p-2"></i>
+                          <span class="menu-text">Seçilmişlər</span>
                         </a>
-                    </li>
+                      </li>
+                                            
                     <li class="flex dark:text-[#8d94ad] hover:text-red-700 font-light">
                         <a rel="noopener noreferrer" href="#" class="flex items-center px-1 -mb-1 border-b-2 dark:border-">
                             <i class="fa-solid fa-circle-user px-1"></i>

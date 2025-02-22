@@ -17,6 +17,8 @@ const years = document.getElementById('years');
 const maksi = document.getElementById('maksi');
 const heart = document.getElementById('heart');
 const heart2 = document.getElementById('heart2');
+const openLink = document.getElementById('openLink');
+
 
 
 
