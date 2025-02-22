@@ -108,6 +108,18 @@ let dilim = 8;
         x.style.color = 'red';
     }
 
+    let flag = true
+    function likeOpen() {
+        openClose.style.right = flag ? 0 : '100%'
+        flag = !flag
+    }
+
+    
+    // function sifirla(){
+    //   data = zapaz; 
+    //   show();
+    //   select.forEach(item => item.value = "");
+    // }
 
 
     

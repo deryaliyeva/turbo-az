@@ -10,87 +10,79 @@
     <title>Turbo.Az</title>
 </head>
 <body>
-    <header>
-        <section class="dark:bg-[#f7f7f7] dark:text-gray-800 flex !items-center justify-between"> 
-            <div class="container px-5 p-2 flex justify-between mx-auto">
-                <ul class="space-x-3 md:flex">
-                    <li class="dark:text-[#8d94ad] hover:text-red-700 flex items-center font-light px-1">
-                        <a rel="noopener noreferrer" href="#">Tap.az</a>
-                    </li>
-                    <li class="dark:text-[#8d94ad] hover:text-red-700 flex items-center  font-light px-1">
-                        <a rel="noopener noreferrer" href="#">Bina.az</a>
+    
+    <div class="container px-5 p-2 flex justify-between mx-auto">
+        <ul class="space-x-3 md:flex">
+            <li class="dark:text-[#8d94ad] hover:text-red-700 flex items-center font-light px-1">
+                <a rel="noopener noreferrer" href="#">Tap.az</a>
+            </li>
+            <li class="dark:text-[#8d94ad] hover:text-red-700 flex items-center  font-light px-1">
+                <a rel="noopener noreferrer" href="#">Bina.az</a>
 
-                    </li>
-                    <li class="dark:text-[#8d94ad] hover:text-red-700 flex items-center  font-light px-1">
-                        <a rel="noopener noreferrer" href="#">Boss.az</a>
-                    </li>
-                </ul>
+            </li>
+            <li class="dark:text-[#8d94ad] hover:text-red-700 flex items-center  font-light px-1">
+                <a rel="noopener noreferrer" href="#">Boss.az</a>
+            </li>
+        </ul>
+        <ul class="items-stretch hidden space-x-3 md:flex">
+            <li class="flex">
+                <a rel="noopener noreferrer" href="#"
+                    class="text-[#000] pl-10 -mb-1 mt-1 border-b-2 dark:border-">Dəstək:<span
+                        class="text-[#000] hover:text-red-700 font-light"> (012) 526-47-47</span></a>
+            </li>
+            <li class="flex dark:text-[#8d94ad] hover:text-red-700 font-light px-3">
+                <a rel="noopener noreferrer" href="#"
+                    class="flex items-center px-1 -mb-1 border-b-2 dark:border-">Yardım</a>
+            </li>
+            <li class="flex dark:text-[#8d94ad] hover:text-red-700 font-light">
+                <a rel="noopener noreferrer" href="#"
+                    class="flex items-center px-1 -mb-1 border-b-2 dark:border- dark:text-violet-600 dark:border-violet-600">RU</a>
+            </li>
+            <li onclick="likeOpen()" class="flex dark:text-[#8d94ad] hover:text-red-700 font-light px-1">
+                <a rel="noopener noreferrer" href="#" class="flex items-center px-2 -mb-1 border-b-2 dark:border-">
+                    <i class="fa-solid fa-heart p-2"></i>
+                    Seçilmişlər
+                </a>
+            </li>
+            <li class="flex dark:text-[#8d94ad] hover:text-red-700 font-light">
+                <a rel="noopener noreferrer" href="#" class="flex items-center px-1 -mb-1 border-b-2 dark:border-">
+                    <i class="fa-solid fa-circle-user px-1"></i>
+                    Giriş
+                </a>
+            </li>
+        </ul>
+        <button class="flex justify-end p-4 md:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                class="w-6 mt-5 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                </path>
+            </svg>
+        </button>
+    </div>
+        
 
-                <ul class="items-stretch hidden space-x-3 md:flex">
-                    <li class="flex">
-                        <a rel="noopener noreferrer" href="#" class="text-[#000] pl-10 -mb-1 mt-1 border-b-2 dark:border-">Dəstək:<span class="text-[#000] hover:text-red-700 font-light"> (012) 526-47-47</span></a>
-                    </li>
-                    <li class="flex dark:text-[#8d94ad] hover:text-red-700 font-light px-3">
-                        <a rel="noopener noreferrer" href="#" class="flex items-center px-1 -mb-1 border-b-2 dark:border-">Yardım</a>
-                    </li>
-                    <li class="flex dark:text-[#8d94ad] hover:text-red-700 font-light">
-                        <a rel="noopener noreferrer" href="#" class="flex items-center px-1 -mb-1 border-b-2 dark:border- dark:text-violet-600 dark:border-violet-600">RU</a>
-                    </li>
-                    <li class="flex dark:text-[#8d94ad] hover:text-red-700 font-light px-1 relative">
-                        <a id="openLink" onclick="openMenu(event, this)" rel="noopener noreferrer" href="#" class="flex items-center px-2 -mb-1 border-b-2 dark:border-">
-                          <i class="fa-solid fa-heart p-2"></i>
-                          <span class="menu-text">Seçilmişlər</span>
-                        </a>
-                      </li>
-                                            
-                    <li class="flex dark:text-[#8d94ad] hover:text-red-700 font-light">
-                        <a rel="noopener noreferrer" href="#" class="flex items-center px-1 -mb-1 border-b-2 dark:border-">
-                            <i class="fa-solid fa-circle-user px-1"></i>
-                            Giriş
-                        </a>
-                    </li>
-                </ul>
-                <button class="flex justify-end p-4 md:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 mt-5 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
-        </section>
-        <section class="bg-[#ca1016]"> 
-                <div class="container text-white px-3 py-2 flex justify-between mx-auto">
-                    <a rel="noopener noreferrer" href="#" aria-label="Back to homepage" class="flex items-center p-2 font-bold text-xl">
-                        <h1>TURBO.AZ</h1>
-                    </a>
-                    <ul class="items-stretch hidden space-x-3 md:flex">
-                        <li class="flex hover:text-[#fbd3d3e5]">
-                            <a rel="noopener noreferrer" href="#" class="flex items-center px-4 -mb-1 border-b-2 dark:border-">Bütün elanlar</a>
-                        </li>
-                        <li class="flex hover:text-[#fbd3d3e5]">
-                            <a rel="noopener noreferrer" href="#" class="flex items-center px-4 -mb-1 border-b-2 dark:border-">Dilerlər</a>
-                        </li>
-                        <li class="flex hover:text-[#fbd3d3e5]">
-                            <a rel="noopener noreferrer" href="#" class="flex items-center px-4 -mb-1">Avtokataloq</a>
-                        </li>
-                        <li class="flex hover:text-[#fbd3d3e5]">
-                            <a rel="noopener noreferrer" href="#" class="flex items-center px-4 -mb-1 border-b-2 dark:border-">Moto</a>
-                        </li>
-                        <li class="flex hover:text-[#fbd3d3e5]">
-                            <a rel="noopener noreferrer" href="#" class="flex items-center px-4 -mb-1 border-b-2 dark:border-">Ehtiyat hissələr və aksesuarlar</a>
-                        </li>
-                        <li class="flex hover:text-[#fbd3d3e5]">
-                            <a rel="noopener noreferrer" href="#" class="flex items-center px-4 -mb-1 border-b-2 dark:border-">İcarə</a>
-                        </li>
+        <header class="bg-[#ca1016] py-3">
+            <nav class="text-white flex justify-between m-auto max-w-[1000px] items-center">
+                <div>
+                    <ul class="flex items-center font-[500] text-white">
+                        <li class="px-[10px] text-[18px] font-[700] pr-8"><a href="#">Turbo.az</a></li>
+                        <li class="px-[10px] text-[15px] flex hover:text-[#fbd3d3e5]"><a href="#">Butun Elanlar</a></li>
+                        <li class="px-[10px] text-[15px] flex hover:text-[#fbd3d3e5]"><a href="#">Dilerler</a></li>
+                        <li class="px-[10px] text-[15px] flex hover:text-[#fbd3d3e5]"><a href="#">Avtokataloq</a></li>
+                        <li class="px-[10px] text-[15px] flex hover:text-[#fbd3d3e5]"><a href="#">Moto</a></li>
+                        <li class="px-[10px] text-[15px] flex hover:text-[#fbd3d3e5]"><a href="#">Ehtiyyat hisseler ve aksesuarlar</a></li>
+                        <li class="px-[10px] text-[15px] flex hover:text-[#fbd3d3e5]"><a href="#">Icare</a></li>
                     </ul>
-                    <button class="flex justify-end p-4 md:hidden"></button>
-
-                    <div class="items-center flex-shrink-0 hidden bg-[#7ed321] hover:bg-[#81c834] px-2 lg:flex rounded-lg">
-                        <i class="fa-regular fa-square-plus px-2"></i>
-                        <button class="self-center rounded">Yeni elan</button>
-                    </div>
                 </div>
-        </section>
-    </header>
+                <div
+                    class="bg-[#7ed321] h-10 w-[103px]  flex-shrink-0 rounded-[7px] text-white flex justify-center items-center cursor-pointer hover:bg-[#85c01f]">
+                    <i class="fa-regular fa-square-plus px-2"></i>
+                    Yeni elan!
+                </div>
+            </nav>
+        </header>
+
+
     <main>
         <section class="pt-8 dark:bg-[#ebedf3]">
             <form class="container flex justify-between flex-col mx-auto space-y-12">
