@@ -828,4 +828,11 @@ let data = [
     },
 ]
 
+data = data.map( (item, i) => {
+    return {
+        ...item,
+        id: i + 1,
+        status: false
+    }
+} )
 const zapaz = [...data];

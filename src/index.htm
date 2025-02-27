@@ -35,11 +35,18 @@
             <li class="flex dark:text-[#8d94ad] hover:text-red-700 font-light">
                 <a rel="noopener noreferrer" href="#" class="flex items-center px-1 -mb-1">RU</a>
             </li>
-            <li class="flex dark:text-[#8d94ad] hover:text-red-700 font-light px-1">
-                <a rel="noopener noreferrer" href="#" class="flex items-center px-2 -mb-1">
-                    <i class="fa-solid fa-heart p-2"></i> Seçilmişlər
+            <li onclick="likeOpen()" class="flex dark:text-[#8d94ad] hover:text-red-700 font-light px-1">
+                <a rel="noopener noreferrer" href="#" class="flex items-center px-2 -mb-1 border-b-2 dark:border-">
+                    <i class="fa-solid fa-heart p-2"></i>
+                    Seçilmişlər
                 </a>
             </li>
+            
+            <div id="sidebar" class="fixed top-0 mr-0 right-[-100%] z-999 w-[30.7%] h-screen overflow-y-auto bg-white shadow-lg transition-all duration-300">
+                <button onclick="closeSidebar()" class="absolute top-3 left-2 text-xl p-2">
+                    <i class="fa-solid fa-xmark text-xl"></i>
+                </button>
+            </div>
             <li class="flex dark:text-[#8d94ad] hover:text-red-700 font-light">
                 <a rel="noopener noreferrer" href="#" class="flex items-center px-1 -mb-1">
                     <i class="fa-solid fa-circle-user px-1"></i> Giriş
@@ -91,7 +98,7 @@
 
             <div class="bg-[#7ed321] h-10 w-[103px] flex-shrink-0 rounded-[7px] text-white flex justify-center items-center cursor-pointer hover:bg-[#85c01f]">
                 <i class="fa-regular fa-square-plus px-2"></i>
-                Yeni elan!
+                Yeni elan
             </div>
         </nav>
     </header>
@@ -141,7 +148,7 @@
                             <span class="text-[#4c88f9]"><a href="#">1000 yeni elan</a></span>
                         </div>
                         <div class="flex mini:gap-5 gap-6 items-center">
-                            <span class="text-[#8d94ad] cursor-default">Sıfırla</span>
+                            <span onclick="siifirla()" class="text-[#8d94ad] cursor-default">Sıfırla</span>
                             <span class="!text-[#ca1016] cursor-pointer">Daha çox filtr <i class="fa-solid fa-caret-down"></i></span>
                             <button onclick="etrafliAxtaris()" class="rounded-[7px] !bg-[#ca1016] !text-white !mini:px-10 !px-1 !py-[13px] !transition !ease-in-out !duration-300 hover:!bg-[#b80d13]">Elanları göstər</button>
                         </div>
