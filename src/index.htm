@@ -10,179 +10,158 @@
     <title>Turbo.Az</title>
 </head>
 <body>
-
-    <div class="container px-5 p-2 flex justify-between mx-auto">
+    <div class="mx-auto max-w-[1000px] px-5 p-2 flex justify-between relative">
         <ul class="space-x-3 md:flex">
             <li class="dark:text-[#8d94ad] hover:text-red-700 flex items-center font-light px-1">
                 <a rel="noopener noreferrer" href="#">Tap.az</a>
             </li>
-            <li class="dark:text-[#8d94ad] hover:text-red-700 flex items-center  font-light px-1">
+            <li class="dark:text-[#8d94ad] hover:text-red-700 flex items-center font-light px-1">
                 <a rel="noopener noreferrer" href="#">Bina.az</a>
-
             </li>
-            <li class="dark:text-[#8d94ad] hover:text-red-700 flex items-center  font-light px-1">
+            <li class="dark:text-[#8d94ad] hover:text-red-700 flex items-center font-light px-1">
                 <a rel="noopener noreferrer" href="#">Boss.az</a>
             </li>
         </ul>
+    
         <ul class="items-stretch hidden space-x-3 md:flex">
             <li class="flex">
-                <a rel="noopener noreferrer" href="#"
-                    class="text-[#000] pl-10 -mb-1 mt-1 border-b-2 dark:border-">Dəstək:<span
-                        class="text-[#000] hover:text-red-700 font-light"> (012) 526-47-47</span></a>
+                <a rel="noopener noreferrer" href="#" class="text-[#000] pl-10 -mb-1 mt-1">
+                    Dəstək: <span class="text-[#000] hover:text-red-700 font-light">(012) 526-47-47</span>
+                </a>
             </li>
             <li class="flex dark:text-[#8d94ad] hover:text-red-700 font-light px-3">
-                <a rel="noopener noreferrer" href="#"
-                    class="flex items-center px-1 -mb-1 border-b-2 dark:border-">Yardım</a>
+                <a rel="noopener noreferrer" href="#" class="flex items-center px-1 -mb-1">Yardım</a>
             </li>
             <li class="flex dark:text-[#8d94ad] hover:text-red-700 font-light">
-                <a rel="noopener noreferrer" href="#"
-                    class="flex items-center px-1 -mb-1 border-b-2 dark:border- dark:text-violet-600 dark:border-violet-600">RU</a>
+                <a rel="noopener noreferrer" href="#" class="flex items-center px-1 -mb-1">RU</a>
             </li>
-            <li onclick="likeOpen()" class="flex dark:text-[#8d94ad] hover:text-red-700 font-light px-1">
-                <a rel="noopener noreferrer" href="#" class="flex items-center px-2 -mb-1 border-b-2 dark:border-">
-                    <i class="fa-solid fa-heart p-2"></i>
-                    Seçilmişlər
+            <li class="flex dark:text-[#8d94ad] hover:text-red-700 font-light px-1">
+                <a rel="noopener noreferrer" href="#" class="flex items-center px-2 -mb-1">
+                    <i class="fa-solid fa-heart p-2"></i> Seçilmişlər
                 </a>
             </li>
             <li class="flex dark:text-[#8d94ad] hover:text-red-700 font-light">
-                <a rel="noopener noreferrer" href="#" class="flex items-center px-1 -mb-1 border-b-2 dark:border-">
-                    <i class="fa-solid fa-circle-user px-1"></i>
-                    Giriş
+                <a rel="noopener noreferrer" href="#" class="flex items-center px-1 -mb-1">
+                    <i class="fa-solid fa-circle-user px-1"></i> Giriş
                 </a>
             </li>
         </ul>
-        <button class="flex justify-end p-4 md:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                class="w-6 mt-5 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
-                </path>
-            </svg>
-        </button>
+    
+        <div class="md:hidden">
+            <button id="menu-toggle" class="flex justify-end p-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 mt-5 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+    
+            <ul id="mobile-menu" class="absolute left-0 top-22 w-full bg-[#ca1016] z-999 !px-5 hidden text-white !py-1 space-y-2">
+                <li class="flex justify-between items-center">
+                    <span>Dəstək: (012) 526-47-47</span>
+                </li>
+                <li><a href="#" class="block">Yardım</a></li>
+                <li><a href="#" class="block">RU</a></li>
+                <li><a href="#" class="block flex items-center">Seçilmişlər</a></li>
+                <li><a href="#" class="block flex items-center">Giriş</a></li>
+
+                <li><a href="#" class="text-[15px]">Bütün Elanlar</a></li>
+                <li><a href="#" class="text-[15px]">Dilerlər</a></li>
+                <li><a href="#" class="text-[15px]">Avtokataloq</a></li>
+                <li><a href="#" class="text-[15px]">Moto</a></li>
+                <li><a href="#" class="text-[15px]">Ehtiyyat hissələr</a></li>
+                <li><a href="#" class="text-[15px]">İcarə</a></li>
+            </ul>
+        </div>
+       
     </div>
+    
+    <header class="bg-[#ca1016] py-3">
+        <nav class="text-white flex justify-between items-center mx-auto max-w-[1000px] p-4 relative">
+            <div class="flex items-center">
+                <a href="#" class="text-[18px] font-[700] pr-8">Turbo.az</a>
+    
+                <ul class="hidden lg:flex font-[500] items-center space-x-4">
+                    <li><a href="#" class="text-[15px] hover:!text-[#fbd3d3e5]">Bütün Elanlar</a></li>
+                    <li><a href="#" class="text-[15px] hover:!text-[#fbd3d3e5]">Dilerlər</a></li>
+                    <li><a href="#" class="text-[15px] hover:!text-[#fbd3d3e5]">Avtokataloq</a></li>
+                    <li><a href="#" class="text-[15px] hover:!text-[#fbd3d3e5]">Moto</a></li>
+                    <li><a href="#" class="text-[15px] hover:!text-[#fbd3d3e5]">Ehtiyyat hissələr</a></li>
+                    <li><a href="#" class="text-[15px] hover:!text-[#fbd3d3e5]">İcarə</a></li>
+                </ul>
+            </div>
 
-        <header class="bg-[#ca1016] py-3">
-            <nav class="text-white flex justify-between m-auto max-w-[1000px] items-center">
-                <div>
-                    <ul class="flex items-center font-[500] text-white">
-                        <li class="px-[10px] text-[18px] font-[700] pr-8"><a href="#">Turbo.az</a></li>
-                        <li class="px-[10px] text-[15px] flex hover:text-[#fbd3d3e5]"><a href="#">Butun Elanlar</a></li>
-                        <li class="px-[10px] text-[15px] flex hover:text-[#fbd3d3e5]"><a href="#">Dilerler</a></li>
-                        <li class="px-[10px] text-[15px] flex hover:text-[#fbd3d3e5]"><a href="#">Avtokataloq</a></li>
-                        <li class="px-[10px] text-[15px] flex hover:text-[#fbd3d3e5]"><a href="#">Moto</a></li>
-                        <li class="px-[10px] text-[15px] flex hover:text-[#fbd3d3e5]"><a href="#">Ehtiyyat hisseler ve aksesuarlar</a></li>
-                        <li class="px-[10px] text-[15px] flex hover:text-[#fbd3d3e5]"><a href="#">Icare</a></li>
-                    </ul>
-                </div>
-                <div
-                    class="bg-[#7ed321] h-10 w-[103px]  flex-shrink-0 rounded-[7px] text-white flex justify-center items-center cursor-pointer hover:bg-[#85c01f]">
-                    <i class="fa-regular fa-square-plus px-2"></i>
-                    Yeni elan!
-                </div>
-            </nav>
-        </header>
-
-
+            <div class="bg-[#7ed321] h-10 w-[103px] flex-shrink-0 rounded-[7px] text-white flex justify-center items-center cursor-pointer hover:bg-[#85c01f]">
+                <i class="fa-regular fa-square-plus px-2"></i>
+                Yeni elan!
+            </div>
+        </nav>
+    </header>
+    
+    <script>
+        document.getElementById('menu-toggle').onclick = function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        };
+    </script>
+ 
     <main>
         <section class="pt-8 dark:bg-[#ebedf3]">
-            <form class="container flex justify-between flex-col mx-auto space-y-12">
+            <form class="max-w-[1000px] flex justify-center items-center mx-auto flex-col space-y-12">
                 <fieldset class="flex !md:items-center !md:justify-center flex-wrap md:max-w-full gap-4 p-6 rounded-md shadow-sm">
-                    <div id="prices" class="grid grid-cols-1 mb-7 py-2 gap-2 md:col-span-1 md:row-span-1">
-                        <div class="col-span-4 rounded-lg p-2 h-12 w-64 bg-white !md:col-span-12">
-                            <label for="firstname" class="text-base flex items-center cursor-pointer dark:text-[#8d94ad] font-light">
-                                <input type="text" class="w-28" placeholder="Marka" />
-                                <select onchange="go('brand', this)" class="w-34" id="marka"></select>
-                            </label>
+                    <div class="px-3 container m-auto flex flex-col items-center md:flex-row justify-between gap-3">
+                        <select id="marka" onchange="go('brand', this)" class="h-[46px] cursor-pointer bg-white text-[#8d94ad] outline-none max-w-[235px] w-[100%] rounded-[7px] border p-2 focus:border focus:border-[#8080808f]"></select>
+                        <select id="model" onchange="go('model', this)" class="h-[46px] cursor-pointer bg-white text-[#8d94ad] outline-none max-w-[235px] w-[100%] rounded-[7px] border p-2 focus:border focus:border-[#8080808f] "></select>
+                        <div class="flex border rounded-[7px] border-[#dfe3e9] bg-white text-[#8d94ad] cursor-pointer max-w-[235px]">
+                            <div class="flex items-center justify-center py-[11px] px-4 bg-[#ca1016] rounded-tl-[7px] rounded-bl-[7px] text-white">Hamısı</div>
+                            <div class="border-x border-[#dfe3e9] flex py-[11px] items-center justify-center px-4">Yeni</div>
+                            <div class="flex items-center justify-center py-[11px] px-4">Sürülmüş</div>
                         </div>
-                        <div  class="col-span-4 bg-white rounded-lg h-11 w-full sm:col-span-2">
-                            <label for="lastname" class="text-base flex items-center py-2 px-1 dark:text-[#8d94ad] font-light">
-                                <input id="mininp" type="text" class="w-28" placeholder="Qiymət min." />
-                            </label>
+                        <select id="seher" onchange="go('city', this)" class="h-[46px] cursor-pointer bg-white text-[#8d94ad] outline-none max-w-[235px] w-[100%] rounded-[7px] border p-2 focus:border focus:border-[#8080808f]"></select>
+                    </div>
+                    <div class="px-3 mt-[10px] container m-auto flex flex-col items-center md:flex-row justify-between gap-3">
+                        <div class="h-[46px] bg-white flex text-[#8d94ad] max-w-[235px] w-[100%] rounded-[7px]">
+                            <input type="text" class="w-[50%] p-2 outline-none focus:border-[#8d94ad] border border-r-[#8d94ad] rounded-tl-[7px] rounded-bl-[7px]" placeholder="Qiymət, min." />
+                            <input type="text" class="w-[50%] p-2 outline-none focus:border-[#8d94ad] border rounded-tr-[7px] rounded-br-[7px]" placeholder="maks." />
                         </div>
-                        <div class="col-span-4 bg-white w-full rounded-lg h-11 sm:col-span-2">
-                            <label for="lastname" class="text-base sm:w-1/2 mx-auto md:col-4 flex items-center p-2 dark:text-[#8d94ad] font-light">
-                                <input id="maksinp" type="text" class="w-16" placeholder="maks." />
-                            </label>
+                        <div class="h-[46px] flex max-w-[235px] w-[100%] rounded-[7px]  justify-between">
+                            <select id="moneys" class="min-w-[82px] rounded-[7px] bg-white !border !outline-none p-2 focus:border cursor-pointer !focus:border-[#8080808f]"></select>
+                            <div class="w-[60px] border rounded-[7px] bg-white flex justify-center items-center cursor-pointer transition ease-in-out duration-300 container hover:border-[#8080808f]">Kredit</div>
+                            <div class="w-[60px] border rounded-[7px] bg-white flex justify-center items-center cursor-pointer transition ease-in-out duration-300 hover:border-[#8080808f]">Barter</div>
+                        </div>
+                        <select id="ban" onchange="go('banType', this)" class="h-[46px] cursor-pointer bg-white outline-none text-[#8d94ad] max-w-[235px] w-[100%] rounded-[7px] border p-2 focus:border focus:border-[#8080808f]"></select>
+                        <div class="h-[46px] bg-white flex text-[#8d94ad] max-w-[235px] w-[100%] rounded-[7px]">
+                            <select id="years" onchange="go('model', this)"  type="text" class="w-[50%] p-2 outline-none border border-r-[#8d94ad] rounded-tl-[7px] rounded-bl-[7px] focus:border !focus:border-[#8080808f]" placeholder="Qiymət, min." ></select>
+                            <select id="maksi" onchange="go('model', this)"  type="text" class="w-[50%] p-2 outline-none border rounded-tr-[7px] rounded-br-[7px] focus:border !focus:border-[#8080808f]" placeholder="maks." ></select>
                         </div>
                     </div>
-                <div class="grid grid-cols-1 mb-7 py-2 gap-2 md:col-span-1 md:row-span-1">
-                    <div class="col-span-4 rounded-lg p-2 h-12 bg-white sm:col-span-12">
-                        <label for="firstname" class="text-base flex items-center cursor-pointer dark:text-[#8d94ad] font-light">
-                            <input type="text" class="w-28" placeholder="Model" />
-                            <select onchange="go('model', this)" class="w-34" id="model"></select>
-                        </label>
-                    </div>
-                    <div class="col-span-4 bg-white flex w-full items-center rounded-lg sm:col-span-2 pl-2 h-10">
-                        <label for="city" class="text-base flex items-center justify-end dark:text-[#8d94ad] cursor-pointer font-light">
-                            <select onchange="go('price', this)" id="moneys"></select>
-                        </label>
-                    </div>
-                    <div class="col-span-4 bg-white flex hover:bg-neutral-300 w-full cursor-pointer items-center rounded-lg sm:col-span-2 pl-2 h-10">
-                        <label for="state" class="text-base font-light">Kredit</label>
-                    </div>
-                    <div class="col-span-4 bg-white flex items-center w-full  rounded-lg hover:bg-neutral-300 cursor-pointer sm:col-span-2 pl-2 h-10">
-                        <label for="zip" class="text-base font-light">Barter</label>
-                    </div>
-                </div>
-                <div class="grid grid-cols-1 mb-7 py-2 gap-2 md:col-span-1 md:row-span-1">
-                    <div class="col-span-4 bg-[#ca1016] sm:col-span-2 h-12 flex items-center justify-center rounded-lg rounded-r-none p-1">
-                        <label for="firstname" class="text-base dark:text-white font-light">Hamısı</label>
-                    </div>
-                    <div class="col-span-4 bg-white sm:col-span-2 h-12  flex items-center justify-center rounded-lg p-1">
-                        <label for="lastname" class="text-base dark:text-[#8d94ad] font-light">Yeni</label>
-                    </div>
-                    <div class="col-span-4 bg-white sm:col-span-2 h-12 flex items-center justify-center rounded-lg p-1">
-                        <label for="lastname" class="text-base dark:text-[#8d94ad] font-light">Sürülmüş</label>
-                    </div>
-                    <div class="col-span-4 w-[260px] bg-white sm:col-span-6 h-12 cursor-pointer flex items-center rounded-lg p-1">
-                        <label for="email" class="text-base dark:text-[#8d94ad] font-light">
-                            <input type="text" class="w-28" placeholder="Ban növü" />
-                            <select onchange="go('banType', this)" id="ban"></select>
-                        </label>
-                    </div>
-                </div>
-                <div class="grid grid-cols-1 mb-7 py-2 gap-2 md:col-span-1 md:row-span-1">
-                    <div class="col-span-4 rounded-lg w-full p-2 h-12 bg-white sm:col-span-5">
-                        <label for="firstname" class="text-base flex items-center cursor-pointer dark:text-[#8d94ad] font-light">
-                           <input type="text" class="w-full" placeholder="Şəhər" />
-                           <select onchange="go('city', this)" id="seher"></select>
-                        </label>
-                    </div>
-                    <div class="col-span-4 bg-white rounded-lg h-11 w-full sm:col-span-2">
-                        <label for="lastname" class="text-base flex items-center py-2 px-1 dark:text-[#8d94ad] font-light">
-                            <input type="text" class="w-28" placeholder="il, min." />
-                            <select onchange="go('year', this)" id="years"></select>
-                        </label>
-                    </div>
-                    <div class="col-span-4 bg-white rounded-lg h-11 w-full sm:col-span-2">
-                        <label for="lastname" class="text-base flex items-center p-2 dark:text-[#8d94ad] font-light">
-                            <input type="text" class="w-28" placeholder="maks." />
-                            <select onchange="go('year', this)" id="maksi"></select>
-                        </label>
-                    </div>
-                </div>
                 </fieldset>
+
+                    <div class="container text-[15px] m-auto px-3 flex flex-col items-center gap-4 md:flex-row justify-between pt-10 pb-10">
+                        <div class="flex items-center gap-1">
+                            <span>Bu gün: </span>
+                            <span class="text-[#4c88f9]"><a href="#">1000 yeni elan</a></span>
+                        </div>
+                        <div class="flex mini:gap-5 gap-6 items-center">
+                            <span class="text-[#8d94ad] cursor-default">Sıfırla</span>
+                            <span class="!text-[#ca1016] cursor-pointer">Daha çox filtr <i class="fa-solid fa-caret-down"></i></span>
+                            <button onclick="etrafliAxtaris()" class="rounded-[7px] !bg-[#ca1016] !text-white !mini:px-10 !px-1 !py-[13px] !transition !ease-in-out !duration-300 hover:!bg-[#b80d13]">Elanları göstər</button>
+                        </div>
+                    </div>
                 <div>
-                <div class="flex items-center justify-between">
-                    <a rel="noopener noreferrer" href="#" aria-label="Back to homepage" class="flex font-semibold text-lg items-center p-2">
-                        <h1 class="">Avtomobil almaq</h1>
-                        <span class="flex dark:text-[#8d94ad] px-3 text-base font-light">10000 elan</span>
-                    </a>
-                    <button onclick="go(event)" class="!bg-[#ca1016] !text-white !rounded-md !my-2 !p-2">Elanlari Gosterin</button>
-                </div>
         </form>
-        <div class="bg-[#e3e6f0] mt-3 py-4">
-            <div class="container px-3 mx-auto text-xl font-semibold">
+
+
+    </section>
+
+        <div class="py-4 bg-[#d8dfe8]">
+            <div class="px-3 mx-auto max-w-[1000px] text-xl font-semibold">
                  <h1>SALONLARIN VIP ELANLARI</h1>
             </div>
         </div>
-        </section>
+       </div>
 
-
-        
         <section class="py-6 sm:py-12 bg-[#f1f3f7] dark:text-gray-800">
-            <div class="container p-6 mx-auto space-y-8">
+            <div class="mx-auto max-w-[1000px] p-6 space-y-8">
                 <div id="content" class="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
-    
                 </div>
                 <div id="duyme" class="text-center dark:text-[#8d94ad] hover:text-[#b51515]">
                     <span onclick="artir()">Daha fazla göster</span>
@@ -230,7 +209,7 @@
         </div>
     </footer>
 
-    <script src="js/data.js"></script>
-    <script src="js/index.js"></script>
+    <script src="../src/js/data.js"></script>
+    <script src="../src/js/index.js"></script>
 </body>
 </html>

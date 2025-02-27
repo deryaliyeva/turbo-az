@@ -554,9 +554,4 @@ video {
   display: none;
 }
 
-.text-red-500 {
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity, 1));
-}
-
 /* npx tailwindcss -i ./style/input.css -o ./style/output.css --watch  */
