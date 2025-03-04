@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="output.css">
-    <link rel="shortcut icon" href="turbo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="src/output.css">
+     <link rel="shortcut icon" href="turbo.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Turbo.Az</title>
 </head>
@@ -35,13 +35,13 @@
             <li class="flex dark:text-[#8d94ad] hover:text-red-700 font-light">
                 <a rel="noopener noreferrer" href="#" class="flex items-center px-1 -mb-1">RU</a>
             </li>
-            <li onclick="likeOpen()" class="flex dark:text-[#8d94ad] hover:text-red-700 font-light px-1">
+            <div onclick="likeOpen()" class="flex dark:text-[#8d94ad] hover:text-red-700 font-light px-1">
                 <a rel="noopener noreferrer" href="#" class="flex items-center px-2 -mb-1 border-b-2 dark:border-">
                     <i class="fa-solid fa-heart p-2"></i>
                     Seçilmişlər
                 </a>
-            </li>
-            
+            </div>
+            <div id="sidebarDiv"></div>
             <div id="sidebar" class="fixed top-0 mr-0 right-[-100%] z-999 w-[30.7%] h-screen overflow-y-auto bg-white shadow-lg transition-all duration-300">
                 <button onclick="closeSidebar()" class="absolute top-3 left-2 text-xl p-2">
                     <i class="fa-solid fa-xmark text-xl"></i>
@@ -84,7 +84,7 @@
     <header class="bg-[#ca1016] py-3">
         <nav class="text-white flex justify-between items-center mx-auto max-w-[1000px] p-4 relative">
             <div class="flex items-center">
-                <a href="#" class="text-[18px] font-[700] pr-8">Turbo.az</a>
+                <a href="index.htm" class="text-[18px] font-[700] pr-8">Turbo.az</a>
     
                 <ul class="hidden lg:flex font-[500] items-center space-x-4">
                     <li><a href="#" class="text-[15px] hover:!text-[#fbd3d3e5]">Bütün Elanlar</a></li>
@@ -101,16 +101,21 @@
                 Yeni elan
             </div>
         </nav>
-    </header>
-    
-    <script>
-        document.getElementById('menu-toggle').onclick = function() {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
-        };
-    </script>
- 
-    <main>
+    </header> 
+
+    <main id="mains">
+        <div id="openClose" class="fixed bg-gray-100 top-0 h-screen overflow-y-auto transition-all ease-in-out duration-300 z-50 
+        right-[-100vw] w-screen md:w-[400px] p-2">
+        <div class="flex justify-between items-center">
+            <span onclick="likeOpen()" class="text-xl p-3 cursor-pointer">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+            <button onclick="deleteAll()" class="!text-l !bg-[#ca1016e2] !p-2 !rounded !text-white hover:!bg-[#b02b2f]">
+                Delete All
+            </button>
+        </div>
+        <div id="Closebars"></div>
+    </div>    
         <section class="pt-8 dark:bg-[#ebedf3]">
             <form class="max-w-[1000px] flex justify-center items-center mx-auto flex-col space-y-12">
                 <fieldset class="flex !md:items-center !md:justify-center flex-wrap md:max-w-full gap-4 p-6 rounded-md shadow-sm">
@@ -150,12 +155,11 @@
                         <div class="flex mini:gap-5 gap-6 items-center">
                             <span onclick="siifirla()" class="text-[#8d94ad] cursor-default">Sıfırla</span>
                             <span class="!text-[#ca1016] cursor-pointer">Daha çox filtr <i class="fa-solid fa-caret-down"></i></span>
-                            <button onclick="etrafliAxtaris()" class="rounded-[7px] !bg-[#ca1016] !text-white !mini:px-10 !px-1 !py-[13px] !transition !ease-in-out !duration-300 hover:!bg-[#b80d13]">Elanları göstər</button>
+                            <button class="rounded-[7px] !bg-[#ca1016] !text-white !mini:px-10 !px-1 !py-[13px] !transition !ease-in-out !duration-300 hover:!bg-[#b80d13]">Elanları göstər</button>
                         </div>
                     </div>
                 <div>
         </form>
-
 
     </section>
 
@@ -179,7 +183,7 @@
     </main>
 
     <footer class="dark:bg-gray-100 dark:text-gray-900">
-        <div class="container flex flex-col p-4 mx-auto md:p-8 lg:flex-row dark:divide-gray-600">
+        <div class="max-w-[1000px] flex flex-col p-4 mx-auto md:p-8 lg:flex-row dark:divide-gray-600">
             <ul
                 class="self-center py-6 space-y-4 text-center sm:flex hover:text-[#b51515] text-base font-light sm:space-y-0 sm:justify-around sm:space-x-4 lg:flex-1 lg:justify-start">
                 <li>Reklam yerləşdirin</li>
@@ -216,7 +220,7 @@
         </div>
     </footer>
 
-    <script src="../src/js/data.js"></script>
-    <script src="../src/js/index.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

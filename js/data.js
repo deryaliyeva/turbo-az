@@ -1,6 +1,5 @@
 let data = [
     {
-
         brand: "Abarth",
         model: "Seltos",
         banType: "Offroader / SUV",
@@ -82,7 +81,7 @@ let data = [
         year: "2022",
         credit: false,
         engine: 1.5,
-        images: [
+        images: [         
             "https://turbo.azstatic.com/uploads/full/2022%2F09%2F19%2F17%2F33%2F45%2F027df0e9-c5df-46a1-8428-2a356ee17d45%2F44832_yspkMx-Q-VQPULaAOI_MSw.jpg",
         ],
         city: "Oğuz",
@@ -832,6 +831,7 @@ data = data.map( (item, i) => {
     return {
         ...item,
         id: i + 1,
+        count: i + 1,
         status: false
     }
 } )
